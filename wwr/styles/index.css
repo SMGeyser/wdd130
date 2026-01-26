@@ -1,0 +1,152 @@
+* {
+    text-align: center;
+/*    border: 1px solid red; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Indie+Flower&family=Tagesschrift&display=swap');
+
+:root{
+    --heading-font: 'Indie Flower', 'Tagesschrift';
+    --paragraph-font: 'Google Sans', Arial, sans-serif;
+}
+header {
+    background-color: white;
+    color: black;
+    font-family: var(--heading-font);
+    border-radius: 20px;
+}
+
+.home-title{
+    font-family: var(--heading-font);
+    font-size: 4em;
+}
+
+body {
+    background-color: black;
+    color: black;
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    border-radius: 0 20px;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+}
+
+#content {
+    background-color: darkseagreen;
+    max-width: 1600px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    padding: 40px;
+    font-family: var(--paragraph-font);
+}
+
+#background {
+    height: 725px;
+    background-color: white;
+}
+
+.logo{
+    margin: 20px;
+    padding-top: 20px;
+    width: 160px;
+}
+
+nav {
+    padding: 25px;
+}
+
+nav a {
+    padding: 15px;
+    color: #02077f;
+    background-color:gainsboro;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #02077f;
+}
+
+a:hover {
+    color: #727599;
+    background-color: whitesmoke;
+}
+
+#hero-img{
+    width: 100%;
+}
+
+#hero{
+    background-color: white;
+    margin: 0px 25px;
+    padding-bottom: 15px;
+
+}
+
+.home-grid{
+    background-color: white;
+    margin: 0px 25px;
+    padding-bottom: 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+.msg{
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.msg p{
+    font-size: 0.8rem;
+}
+
+.icon{
+    width: 80px;
+}
+
+.card-img{
+    width: 250px;
+}
+
+.book, .join{
+    background-color: gainsboro;
+    color: #02077f;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px; 
+
+}
+
+.book:hover, .join:hover{
+    background-color: whitesmoke;
+    color: #727599;
+}
+
+footer{
+   background-color: gainsboro; 
+   padding: 20px;
+   margin: 20px 0px;
+   color: black;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+footer a{
+    background-color: gainsboro;
+    color: #02077f;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: whitesmoke;
+    color: #727599;
+    text-decoration: underline;
+}
+
+.social-icon {
+    border-radius: 15px;
+}
