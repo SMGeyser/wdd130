@@ -45,3 +45,32 @@ body {
   box-shadow: 5px 5px 0px black;
   min-height: 400px;
 }
+
+tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+th {
+  background-color: #607f9f;
+}
+
+table, th, td {
+  border: 2px outset black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+form {
+  margin: 15px;
+  padding: 10px;
+  border: 3px inset #d3d3d3;
+}
+
+form {
+  background-color: #e3e3e3;
+}
+
+input {
+  text-align: center;
+  border-radius: 5px;
+}
