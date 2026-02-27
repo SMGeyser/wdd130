@@ -175,7 +175,13 @@ header ul {
     justify-self: center;
     align-self: center;
     border-radius: 15px;
-} 
+    transition: transform 2s;
+}
+
+#abtme_img:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
 
 #contact {
     text-align: center;
@@ -229,5 +235,53 @@ footer p {
 /* below is for the ice page */
 
 #ice_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+}
 
+.ice-link {
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    border: solid 2px #cdcac7;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #556073;
+    margin: 20px;
+}
+
+.ice-link:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #95a0b3;
+
+}
+#devo {
+    grid-column: 1/2;
+}
+
+#gallery {
+    grid-column: 2/3;
+}
+
+#flags {
+    grid-column: 3/4;
+}
+
+#positioning {
+    grid-column: 1/2;
+}
+
+#prophet {
+    grid-column: 2/3;
+}
+
+#valentines {
+    grid-column: 3/4;
+}
+
+#signup {
+    grid-column: 2/3;
 }
