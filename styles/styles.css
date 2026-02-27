@@ -175,7 +175,7 @@ header ul {
     justify-self: center;
     align-self: center;
     border-radius: 15px;
-    transition: transform 2s;
+    transition: transform 1.75s;
 }
 
 #abtme_img:hover {
