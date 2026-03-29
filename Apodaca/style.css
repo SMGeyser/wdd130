@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Delius&display=swap');
+
+body {
+    background-color: #FAF9F6;
+    margin: 0 0 0 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    height: 100px;
+    margin: 0;
+}
+
+.head_logo {
+    grid-column: 1/2;
+    align-self: center;
+    padding: 10px 10%;
+    text-decoration: none;
+    width: 75px;
+    height: 75px;
+}
+
+.head_logo img {
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+}
+
+.head_logo:hover {
+    text-decoration: none;
+}
+
+header nav {
+    align-content: center;
+    grid-column: 3/4;
+    margin-right: 0%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    font-size: 1em;
+}
+
+header ul a {
+    text-decoration: none;
+    padding: 15px;
+    font-family: delius;
+}
+
+.hero {
+    margin: 0;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.hero h1 {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 4em;
+    font-family: alan sans;
+    color: #FAEDCD;
+}
+
+#hero-p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 2% 17.5%;
+    border-radius: 50px;
+    background-color: #FAEDCD;
+    order: 0;
+}
+
+.hero p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 20%;
+    align-self: center;
+    color: black;
+    font-size: 1.25em;
+    font-family: delius;
+    text-align: center;
+    order: 1;
+}
+
+#hero-buttons {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25em;
+}
+
+.hero a {
+    margin: 5%;
+    align-self: center;
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: delius;    
+}
+
+#hero-img {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    z-index: -1;
+    width: 100%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5% ;
+}
+
+#home-keychain {
+    grid-column: 1/2;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-keychain img {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+}
+
+#home-keychain h2 {
+    font-size: 2em;
+}
+
+#home-keychain p {
+    font-size: 1em;
+    text-align: center;
+}
+
+#home-keychain a {
+    font-size: .75em;
+    text-decoration: none;
+}
+
+#home-stuffed {
+    grid-column: 2/3;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-stuffed img {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+}
+
+#home-stuffed h2 {
+    font-size: 2em;
+}
+
+#home-stuffed p {
+    font-size: 1em;
+    text-align: center;
+}
+
+#home-stuffed a {
+    font-size: .75em;
+    text-decoration: none;
+}
+
+#home-bag {
+    grid-column: 3/4;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-bag img {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+}
+
+#home-bag h2 {
+    font-size: 2em;
+}
+
+#home-bag p {
+    font-size: 1em;
+    text-align: center;
+}
+
+#home-bag a {
+    font-size: .75em;
+    text-decoration: none;
+}
+
+#home-blanket {
+    grid-column: 4/5;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-blanket img {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+}
+
+#home-blanket h2 {
+    font-size: 2em;
+}
+
+#home-blanket p {
+    font-size: 1em;
+    text-align: center;
+}
+
+#home-blanket a {
+    font-size: .75em;
+    text-decoration: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    height: 100px;
+}
+
+.foot_logo {
+    grid-column: 1/2;
+    align-self: center;
+    padding: 20px 10%;
+    text-decoration: none;
+    width: 75px;
+    height: 75px;
+}
+
+.foot_logo img {
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+}
+
+.foot_logo:hover {
+    text-decoration: none;
+}
+
+footer ul {
+    align-content: center;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    font-size: 1em;
+}
+
+footer ul a {
+    text-decoration: none;
+    padding: 15px;
+    font-family: delius;
+}
