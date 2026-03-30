@@ -3,7 +3,9 @@
 
 body {
     background-color: #FAF9F6;
-    margin: 0 0 0 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 header {
@@ -11,6 +13,7 @@ header {
     grid-template-columns: 25% 25% 50%;
     height: 100px;
     margin: 0;
+    background-color: #CCD5AE;
 }
 
 .head_logo {
@@ -50,6 +53,18 @@ header ul a {
     text-decoration: none;
     padding: 15px;
     font-family: delius;
+    color: darkolivegreen;
+    background-color: #FAEDCD;
+    border-radius: 15px;
+}
+
+header ul a:hover {
+    text-decoration: none;
+    padding: 15px;
+    font-family: delius;
+    color: darkolivegreen;
+    background-color: #FEFAE0;
+    border-radius: 15px;
 }
 
 .hero {
@@ -104,7 +119,23 @@ header ul a {
     border: solid 1px black;
     border-radius: 10px;
     text-decoration: none;
-    font-family: delius;    
+    font-family: delius;   
+    background-color: #FAEDCD;
+    color: darkolivegreen;
+    transition: transform 1s;
+}
+
+.hero a:hover {
+    margin: 5%;
+    align-self: center;
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: delius;   
+    background-color: #FEFAE0;
+    color: darkolivegreen;
+    transform: scale(1.25);
 }
 
 #hero-img {
@@ -117,7 +148,8 @@ header ul a {
 .features {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 5% ;
+    padding: 5% ;
+    background-color: #FAEDCD;
 }
 
 #home-keychain {
@@ -135,20 +167,36 @@ header ul a {
     border-radius: 50%;
     border: solid 7.5px #CCD5AE;
     object-fit: cover;
+    transition: transform 2.5s;
+}
+
+#home-keychain img:hover {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+    transform: scale(1.1);
 }
 
 #home-keychain h2 {
     font-size: 2em;
+    font-family: alan sans;
 }
 
 #home-keychain p {
     font-size: 1em;
     text-align: center;
+    font-family: delius;
 }
 
 #home-keychain a {
     font-size: .75em;
     text-decoration: none;
+    font-family: delius;
+    color: darkolivegreen;
+    font-weight: bold;
 }
 
 #home-stuffed {
@@ -166,20 +214,36 @@ header ul a {
     border-radius: 50%;
     border: solid 7.5px #CCD5AE;
     object-fit: cover;
+    transition: transform 2.5s;
+}
+
+#home-stuffed img:hover {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+    transform: scale(1.1);
 }
 
 #home-stuffed h2 {
     font-size: 2em;
+    font-family: alan sans;
 }
 
 #home-stuffed p {
     font-size: 1em;
     text-align: center;
+    font-family: delius;
 }
 
 #home-stuffed a {
     font-size: .75em;
     text-decoration: none;
+    font-family: delius;
+    color: darkolivegreen;
+    font-weight: bold;
 }
 
 #home-bag {
@@ -197,20 +261,36 @@ header ul a {
     border-radius: 50%;
     border: solid 7.5px #CCD5AE;
     object-fit: cover;
+    transition: transform 2.5s;
+}
+
+#home-bag img:hover {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+    transform: scale(1.1);
 }
 
 #home-bag h2 {
     font-size: 2em;
+    font-family: alan sans;
 }
 
 #home-bag p {
     font-size: 1em;
     text-align: center;
+    font-family: delius;
 }
 
 #home-bag a {
     font-size: .75em;
     text-decoration: none;
+    font-family: delius;
+    color: darkolivegreen;
+    font-weight: bold;
 }
 
 #home-blanket {
@@ -228,26 +308,42 @@ header ul a {
     border-radius: 50%;
     border: solid 7.5px #CCD5AE;
     object-fit: cover;
+    transition: transform 2.5s;
+}
+
+#home-blanket img:hover {
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 7.5px #CCD5AE;
+    object-fit: cover;
+    transform: scale(1.1);
 }
 
 #home-blanket h2 {
     font-size: 2em;
+    font-family: alan sans;
 }
 
 #home-blanket p {
     font-size: 1em;
     text-align: center;
+    font-family: delius;
 }
 
 #home-blanket a {
     font-size: .75em;
     text-decoration: none;
+    font-family: delius;
+    color: darkolivegreen;
+    font-weight: bold;
 }
 
 footer {
     display: grid;
     grid-template-columns: 25% 25% 50%;
-    height: 100px;
+    background-color: #CCD5AE;
 }
 
 .foot_logo {
@@ -263,6 +359,7 @@ footer {
     width:100%;
     height:100%;
     border-radius: 25px;
+    align-self: center;
 }
 
 .foot_logo:hover {
@@ -270,7 +367,7 @@ footer {
 }
 
 footer ul {
-    align-content: center;
+    align-self: center;
     grid-column: 3/4;
     display: flex;
     justify-content: space-around;
@@ -283,4 +380,150 @@ footer ul a {
     text-decoration: none;
     padding: 15px;
     font-family: delius;
+    color: darkolivegreen;
+    background-color: #FAEDCD;
+    border-radius: 15px;
 }
+
+footer ul a:hover {
+    text-decoration: none;
+    padding: 15px;
+    font-family: delius;
+    color: darkolivegreen;
+    background-color: #FEFAE0;
+    border-radius: 15px;
+}
+
+/** PRODUCT PAGE CSS **/
+
+#keychain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+}
+
+#keychain div {
+    display: flex;
+    grid-column: 1/2;
+    justify-content: space-around;
+}
+
+#keychain div img {
+    width: 25%;
+    border-radius: 25px;
+}
+
+#keychain p {
+    align-self: center;
+    font-family: delius;
+}
+
+#stuffed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+}
+
+#stuffed div {
+    display: flex;
+    grid-column: 1/2;
+    justify-content: space-around;
+}
+
+#stuffed div img {
+    width: 20%;
+    border-radius: 25px;
+}
+
+#stuffed p {
+    align-self: center;
+    font-family: delius;
+}
+
+#bag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+}
+
+#bag div {
+    display: flex;
+    grid-column: 1/2;
+    justify-content: space-around;
+}
+
+#bag div img {
+    width: 25%;
+    border-radius: 25px;
+}
+
+#bag p {
+    align-self: center;
+    font-family: delius;
+}
+
+#blanket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+}
+
+#blanket div {
+    display: flex;
+    width: 100%;
+    grid-column: 1/2;
+    justify-content: space-around;
+}
+
+#blanket div img {
+    width: 20%;
+    border-radius: 25px;
+}
+
+#blanket p {
+    align-self: center;
+    font-family: delius;
+}
+
+/** ORDER FORM PAGE CSS **/
+
+#order {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px black solid;
+    padding: 5%;
+}
+
+#label-keychain {
+    margin: 25% 0;
+}
+
+#option-keychain {
+    margin: 25% 0;
+}
+
+#label-stuffed {
+    margin: 25% 0;
+}
+
+#option-stuffed {
+    margin: 25% 0;
+}
+
+#label-bag {
+    margin: 25% 0;
+}
+
+#option-bag {
+    margin: 25% 0;
+}
+
+#label-blanket {
+    margin: 25% 0;
+}
+
+#option-blanket {
+    margin: 25% 0;
+}
+
