@@ -37,9 +37,9 @@
 }
 
 /* common card style */
-.missionary,
-.byui,
-.discount-tire {
+#missionary,
+#byui,
+#discount-tire {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -49,25 +49,25 @@
 }
 
 /* Missionary */
-.missionary h2 {
+#missionary h2 {
     color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
     text-align: center;
 }
 
-.missionary p {
+#missionary p {
     font-size: 0.9rem;
     line-height: 1.8;
     color: #ddd;
 }
 
 /* BYU-Idaho */
-.byui {
+#byui {
     direction: rtl;
 }
 
-.byui h2 {
+#byui h2 {
     color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
@@ -75,7 +75,7 @@
     direction: ltr;
 }
 
-.byui p {
+#byui p {
     font-size: 0.9rem;
     line-height: 1.8;
     color: #ddd;
@@ -84,14 +84,15 @@
 }
 
 /* Discount Tire */
-.discount-tire h2 {
+
+#discount-tire h2 {
     color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
     text-align: center;
 }
 
-.discount-tire p {
+#discount-tire p {
     font-size: 0.9rem;
     line-height: 1.8;
     color: #ddd;
@@ -99,25 +100,25 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-    .missionary,
-    .byui,
-    .discount-tire {
+    #missionary,
+    #byui,
+    #discount-tire {
         grid-template-columns: 1fr;
         padding: 32px 20px;
         gap: 16px;
         direction: ltr;
     }
 
-    .missionary h2,
-    .byui h2,
-    .discount-tire h2 {
+    #missionary h2,
+    #byui h2,
+    #discount-tire h2 {
         text-align: left;
         font-size: 1.2rem;
     }
 
-    .missionary p,
-    .byui p,
-    .discount-tire p {
+    #missionary p,
+    #byui p,
+    #discount-tire p {
         font-size: 0.85rem;
     }
 
